@@ -22,7 +22,19 @@ Antes de começar, certifique-se de ter os seguintes requisitos instalados em se
     git clone https://github.com/mateustostadev/sistema-ponto.git
     ```
 
-2.  Abra o arquivo `backend/conexao.php` e configure as variáveis de ambiente.
+2. Navegue até o diretório do seu projeto:
+
+    ```bash
+    cd sistema-ponto
+    ```
+
+3. Instale as dependências do Composer:
+
+    ```bash
+    composer install
+    ```
+    
+4.  Abra o arquivo `backend/conexao.php` e configure as variáveis de ambiente.
 
        ```dotenv
        $servername = "seu-servidor";
@@ -30,7 +42,8 @@ Antes de começar, certifique-se de ter os seguintes requisitos instalados em se
        $password = "sua-senha";
        $dbname = "seu-banco";
        ```
-3. Configure as variáveis de ambiente nos códigos:
+       
+5. Configure as variáveis de ambiente nos códigos:
 
 - `obterHorariosRegistrados.php`
 - `obterHorariosRegistrados2.php`
