@@ -1,0 +1,368 @@
+body {
+    font-family: 'Bahnschrift', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 190px;
+    background-color: #f4f4f4;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: transform 0.3s ease;
+    overflow-y: auto;
+    /* Isso permite que a barra lateral tenha uma rolagem vertical */
+    max-height: 100%;
+    /* Defina a altura máxima da barra lateral para ocupar 100% da altura da tela */
+    scrollbar-width: thin;
+    /* Define a largura da barra de rolagem para "thin" (fina) */
+}
+
+.show-sidebar-icon {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sidebar-closed {
+    transform: translateX(-190px);
+    /* Oculta a barra lateral */
+}
+
+.user-info,
+.logout {
+    padding: 20px;
+}
+
+.username {
+    color: #000;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.username img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.logout {
+    margin-top: 20px;
+}
+
+.main-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    /* ou qualquer outra largura desejada */
+    text-align: center;
+    /* centralizar o texto dentro da div */
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+}
+
+.service-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #f4f4f4;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.service-link2 {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    margin: 10px;
+    background-color: #f4f4f4;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.service-link3 {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #f4f4f4;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.service-link4 {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #f4f4f4;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+.service-link:hover {
+    background-color: #e0e0e0;
+}
+
+.service-link:active {
+    animation: pulse 0.3s linear;
+}
+
+.service-link2:hover {
+    background-color: #e0e0e0;
+}
+
+.service-link2:active {
+    animation: pulse 0.3s linear;
+}
+
+.service-link3:hover {
+    background-color: #e0e0e0;
+}
+
+.service-link3:active {
+    animation: pulse 0.3s linear;
+}
+
+.service-link4:hover {
+    background-color: #e0e0e0;
+}
+
+.service-link4:active {
+    animation: pulse 0.3s linear;
+}
+
+.service-link img {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.service-link2 img {
+    margin-right: 5px;
+    width: 45px;
+    height: 45px;
+    vertical-align: middle;
+
+}
+
+.service-link3 img {
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+    filter: grayscale(100%) brightness(0%);
+}
+
+.service-link4 img {
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+    filter: grayscale(100%) brightness(0%);
+}
+
+.sub-links {
+    display: none;
+    align-items: center;
+    padding: 5px 10px;
+    /* Reduzindo o padding */
+    margin: 5px;
+    /* Diminuindo a margem */
+    background-color: #f4f4f4;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 13px;
+    /* Diminuindo o tamanho da fonte */
+}
+
+.sub-links a {
+    text-decoration: none;
+    /* Remove o sublinhado */
+    color: #000;
+    /* Define a cor do texto para preto */
+}
+
+.sub-links a:hover {
+    background-color: #e0e0e0;
+    color: #000;
+    /* Cor do texto no hover para preto */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 13px;
+    /* Aumentar o tamanho da fonte */
+    font-weight: bold;
+    padding: 8px 0px;
+    /* Ajustar o padding */
+}
+
+.sub-links a img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.sub-links a:active {
+    animation: pulse 0.3s linear;
+}
+
+
+.sub-links2 {
+    display: none;
+    align-items: center;
+    padding: 5px 10px;
+    /* Reduzindo o padding */
+    margin: 5px;
+    /* Diminuindo a margem */
+    background-color: #f4f4f4;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 13px;
+    /* Diminuindo o tamanho da fonte */
+}
+
+.sub-links2 a {
+    text-decoration: none;
+    /* Remove o sublinhado */
+    color: #000;
+    /* Define a cor do texto para preto */
+
+}
+
+.sub-links2 a:hover {
+    background-color: #e0e0e0;
+    color: #000;
+    /* Cor do texto no hover para preto */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 13px;
+    /* Aumentar o tamanho da fonte */
+    font-weight: bold;
+    padding: 8px 0px;
+    /* Ajustar o padding */
+}
+
+
+.sub-links2 a img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.sub-links2 a:active {
+    animation: pulse 0.3s linear;
+}
+
+/* Estilização da barra de rolagem no Chrome */
+.sidebar::-webkit-scrollbar {
+    width: 3.5px;
+    /* Largura da barra de rolagem */
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Cor do fundo da área da barra de rolagem */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Cor do indicador da barra de rolagem */
+}
+
+.ponto-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 150px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.horario {
+    margin-top: 5;
+}
+
+.mensagem-registro {
+font-size: 14px; /* Ajuste o tamanho da fonte conforme necessário */
+padding: 5px; /* Ajuste o padding conforme necessário */
+}
+
+
+input[type="submit"] {
+    background-color: #008000;
+    color: #ffffff;
+    cursor: pointer;
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Adjust padding */
+}
+
+select, input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

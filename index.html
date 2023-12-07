@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ponto Eletrônico - Login</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="frontend/estiloIndex.css" />
+  </head>
+  <body>
+    <div class="wrapper fadeInDown">
+      <div class="content-login">
+        <!-- Inserir a imagem da logo aqui -->
+        <img src="imagens/logoteste.png" alt="Logo da Empresa" class="logo" />
+        <h2 class="active">Login</h2>
+        <form
+          class="box-login"
+          method="post"
+          action="backend/verificar-login.php"
+        >
+          <input
+            type="text"
+            id="email"
+            class="campo"
+            name="email"
+            placeholder="E-mail"
+          />
+          <input
+            type="password"
+            id="senha"
+            class="campo"
+            name="senha"
+            placeholder="Senha"
+          />
+          <input type="submit" class="botao" value="Entrar" />
+        </form>
+        <a href="cadastro.php" class="link"
+          >Não possui uma conta? Cadastre-se</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
