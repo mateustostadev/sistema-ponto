@@ -42,4 +42,4 @@ Antes de começar, certifique-se de ter os seguintes requisitos instalados em se
 
 ## Considerações Finais
 
-Certifique-se de seguir as instruções e exemplos fornecidos para interagir corretamente com a API Surf Horizon. Em caso de dúvidas ou problemas, consulte a documentação ou entre em contato.
+Certifique-se de seguir as instruções e exemplos fornecidos para interagir corretamente com o sistema. Em caso de dúvidas ou problemas, consulte a documentação ou entre em contato.
