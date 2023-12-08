@@ -57,7 +57,7 @@ Antes de começar, certifique-se de ter os seguintes requisitos instalados em se
    
   ```bash
     require('tcpdf/tcpdf.php');
-    ```
+  ```
   
 
 ## Considerações Finais
