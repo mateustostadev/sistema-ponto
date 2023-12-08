@@ -13,6 +13,7 @@ Antes de começar, certifique-se de ter os seguintes requisitos instalados em se
 1. [Composer](https://getcomposer.org/): Um gerenciador de dependências para PHP.
 2. [XAMPP](https://www.apachefriends.org/index.html) ou outro servidor MySQL e PHP.
 3. [Git](https://git-scm.com/downloads): Para controle de versão.
+4. [Tcpdf](https://github.com/tecnickcom/tcpdf): Biblioteca PHP para PDF.
 
 ### Passos para Instalação
 
@@ -52,6 +53,12 @@ Antes de começar, certifique-se de ter os seguintes requisitos instalados em se
 - `gerar_pdf.php`
 - `gerar_pdf2.php`
 
+6. Baixe a biblioteca tcpdf para o seu repositório local e verifique o caminho da biblioteca nos arquivos `gerar_pdf.php` e `gerar_pdf2.php`.
+   
+  ```bash
+    require('tcpdf/tcpdf.php');
+    ```
+  
 
 ## Considerações Finais
 
