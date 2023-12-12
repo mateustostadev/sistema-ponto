@@ -59,6 +59,9 @@ Antes de começar, certifique-se de ter os seguintes requisitos instalados em se
     require('tcpdf/tcpdf.php');
   ```
   
+## Autor
+
+Sistema desenvolvido por Mateus Tosta
 
 ## Considerações Finais
 
