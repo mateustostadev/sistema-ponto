@@ -579,6 +579,21 @@ $conexao->close();
                 Gerenciar Ponto
             </a>
 
+            <div class="service-link4" onclick="toggleSubLinks('GerenciarOcorrencias')">
+                <img src="imagens/ocorrencia.png" alt="Ícone de Adicionar Clientes">
+                Faltas e Atestados
+            </div>
+            <div id="GerenciarOcorrencias" class="sub-links2">
+                <a href="registrar_cod.php">
+                    <img src="imagens/ocorrencia.png" alt="Ícone de Registro">Registrar Faltas/Atestados
+                </a><br><br>
+
+                <a href="acompanhar_cod.php">
+                    <img src="imagens/ocorrencia.png" alt="Ícone de Registro">Acompanhar Faltas/Atestados
+                </a><br><br>
+            
+            </div>
+
             <div class="service-link4" onclick="toggleSubLinks('GerenciarRelatorios')">
                 <img src="imagens/relatorio.png" alt="Ícone de Adicionar Clientes">
                 Gerar Relatorio Mensal
