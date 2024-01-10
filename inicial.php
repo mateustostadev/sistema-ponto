@@ -389,7 +389,7 @@ $conn->close();
 
 
         input[type="submit"] {
-            background-color: #002d54;
+            background-color: #45a049;
             color: #ffffff;
             cursor: pointer;
             border: none;
